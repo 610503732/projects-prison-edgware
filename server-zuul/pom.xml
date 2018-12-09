@@ -8,12 +8,12 @@
         <version>1.5.6.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>cn.com.git.order</groupId>
-    <artifactId>client-order</artifactId>
+    <groupId>cn.com.git.zuul</groupId>
+    <artifactId>server-zuul</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>client-order</name>
-    <description>client order</description>
+    <name>server-zuul</name>
+    <description>server zuul</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -26,19 +26,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
-
-        <!-- 支持 feign 的依赖 -->
+        <!-- 网关依赖 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
+            <artifactId>spring-cloud-starter-zuul</artifactId>
         </dependency>
-
-        <!-- hystrix -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-hystrix</artifactId>
-        </dependency>
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

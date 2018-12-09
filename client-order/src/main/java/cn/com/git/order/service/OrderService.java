@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderService {
 
     //远程服务注入
-//    @Autowired
-//    private GoodsServiceFeign goodsServiceFeign ;
+    @Autowired
+    private GoodsServiceFeign goodsServiceFeign ;
 
     /**
      * 通过订单 ID 获取订单详情
@@ -22,7 +22,8 @@ public class OrderService {
      */
     @RequestMapping(value = "/orderDetail")
     public String orderDetail(@RequestParam("id") int id){
+
         //测试调用，写死即可
-        return "订单 ID :" + id + "";
+        return "订单 ID :" + id + "," + goodsServiceFeign.goodsDetail(1) ;
     }
 }

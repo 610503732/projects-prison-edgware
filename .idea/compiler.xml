@@ -11,6 +11,7 @@
         <module name="client-order" />
         <module name="client-payment" />
         <module name="server-eureka" />
+        <module name="server-zuul" />
       </profile>
     </annotationProcessing>
   </component>

@@ -7,3 +7,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://user:123456@localhost:7001/eureka/
+feign:
+  hystrix:
+    enabled: true
+client-goods:
+  ribbon:
+    NFLoadBalancerRulerClassName: com.netflix.loadbalancer.RandomRule
