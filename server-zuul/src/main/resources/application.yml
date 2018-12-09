@@ -1,0 +1,14 @@
+server:
+  port: 7005
+
+spring:
+  application:
+    name: client-zuul
+
+eureka:
+  client:
+    service-url:
+     defaultZone: http://user:123456@localhost:7001/eureka/
+zuul:
+  routes:
+     client-order: /order/** #/orderDetail -> /order/orderDetail
