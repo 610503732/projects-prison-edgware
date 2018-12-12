@@ -4,6 +4,7 @@ import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 import org.springframework.stereotype.Component;
 
@@ -13,6 +14,8 @@ import javax.servlet.http.HttpServletRequest;
  * 前置过滤器
  */
 @Component
+//配置自动刷新
+@RefreshScope
 public class PreFilter extends ZuulFilter {
 
     @Value("${tokenCheck}")

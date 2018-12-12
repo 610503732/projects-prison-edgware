@@ -12,3 +12,7 @@ eureka:
 zuul:
   routes:
      client-order: /order/** #/orderDetail -> /order/orderDetail
+management:
+  security:
+    enabled: false
+

@@ -21,6 +21,7 @@
     </properties>
 
     <dependencies>
+        <!-- 远程配置服务依赖 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
