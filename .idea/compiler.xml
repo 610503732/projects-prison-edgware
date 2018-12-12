@@ -10,6 +10,7 @@
         <module name="client-goods" />
         <module name="client-order" />
         <module name="client-payment" />
+        <module name="common-model" />
         <module name="server-eureka" />
         <module name="server-zuul" />
       </profile>
