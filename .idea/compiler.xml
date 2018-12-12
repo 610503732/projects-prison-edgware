@@ -13,6 +13,7 @@
         <module name="common-model" />
         <module name="server-config" />
         <module name="server-eureka" />
+        <module name="server-hystrix-dashboard" />
         <module name="server-zuul" />
       </profile>
     </annotationProcessing>
