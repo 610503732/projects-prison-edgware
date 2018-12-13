@@ -10,8 +10,12 @@ eureka:
     service-url:
      defaultZone: http://user:123456@localhost:7001/eureka/
 zuul:
+  #ignoredPatterns: /order/orderDetail
   routes:
-     client-order: /order/** #/orderDetail -> /order/orderDetail
+     #client-order: /order/** #/orderDetail -> /order/orderDetail
+    orderaaa:
+      path: /order/**
+      serviceId: client-order
 management:
   security:
     enabled: false
