@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        input: #这是一个通道的名称，源代码中
+         #表示要使用的 EXchange 名称定义
+         destination: message
+         #设置消息类型，如果是对象，可以为 application/json
+         content-type: text/plain
+        output:
+         destination: message
+         content-type: text/plain
+
+
+
+
