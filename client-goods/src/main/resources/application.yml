@@ -3,6 +3,17 @@ server:
 spring:
   application:
     name: client-goods
+  redis:
+    database: 0
+    host: 192.168.254.106
+    port: 6379
+    password:
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+    timeout: 0
 eureka:
   client:
     service-url:
